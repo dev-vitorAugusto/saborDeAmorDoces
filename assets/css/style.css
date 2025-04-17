@@ -54,6 +54,7 @@ nav .col a{
     width: 100%;
     z-index: 1;
     top: 7.4%;
+    
 
 }
 /* FIM DOS ESTILOS DO CABEÇALHO */
@@ -118,6 +119,17 @@ nav .col a{
         padding: 100px;
         color: var(--cor-letras);
     }
+
+    nav .row{
+        margin-top: 5rem;
+    }
     
   }
+
+  @media (max-width: 768px) and (orientation: landscape) {
+    .mt-landscape {
+        margin-top: 5rem !important; /* ajuste o valor conforme o necessário */
+    }
+}
+
   
