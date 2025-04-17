@@ -61,7 +61,7 @@ nav .col a{
 
 /* BREAKPOINTS */
 /* Quando a tela passar de 768px (tablet e acima) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (orientation: landscape){
     /* Ajustes para tablet e desktop pequeno */
     #fundo-cabecalho::after {
         content: "";
@@ -82,7 +82,7 @@ nav .col a{
   }
   
   /* Quando a tela passar de 992px (desktop padrão) */
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (orientation: landscape){
 
     .logo{
         position: absolute;
@@ -133,4 +133,41 @@ nav .col a{
     }
 }
 
+/* Telas médias (laptops pequenos, desktops comuns) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    #fundo-cabecalho::after {
+        content: "";
+        display: block;
+        height: 25px;
+        background: url('../icones/icone-triangulos.svg') repeat-x;
+        background-size: auto 100%; 
+        background-position: center;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        top: 9%;
+        display: none;    
+    }
+}
+
+/* Telas grandes (desktops maiores, telas full HD) */
+@media (min-width: 1367px) and (max-width: 1920px) and (orientation: landscape){
+    #fundo-cabecalho::after {
+        content: "";
+        display: block;
+        height: 25px;
+        background: url('../icones/icone-triangulos.svg') repeat-x;
+        background-size: auto 100%; 
+        background-position: center;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        top: 24%;
+        display: none;
+    }
+}
   
