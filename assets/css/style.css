@@ -44,7 +44,7 @@ nav .col a{
 #fundo-cabecalho::after {
     content: "";
     display: block;
-    height: 15px;
+    height: 25px;
     background: url('../icones/icone-triangulos.svg') repeat-x;
     background-size: auto 100%; 
     background-position: center;
@@ -53,7 +53,7 @@ nav .col a{
     left: 0;
     width: 100%;
     z-index: 1;
-    top: 7.5%;
+    top: 11%;
 
 }
 /* FIM DOS ESTILOS DO CABEÇALHO */
