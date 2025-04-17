@@ -1,0 +1,78 @@
+/* IMPORTANDO FONTE DANCING SCRIPT */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/* FIM DA IMPORTAÇÃO */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* VARIÁVEIS DE CORES */
+:root{
+    --cor-fundo-cabecalho: #EBCAB3;
+    --cor-fundo-body: #FBE8E7;
+    --cor-letras: #763123;
+    --cor-botoes: #BB8B77;
+}
+/* FIM VARIÁVEIS DE CORES */
+/* ESTILOS DO CABEÇALHO */
+#fundo-cabecalho{
+    background-color: var(--cor-fundo-cabecalho);
+    min-height: 8vh;
+    overflow-x: hidden;
+}
+.logo{
+    position: absolute;
+    top: 3%;
+    z-index: 5;
+}
+nav .col a{
+    font-family: 'Dancing Script';
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: justify;
+    color: var(--cor-letras);
+}
+.no-break{
+    white-space: nowrap;
+}
+.triangulo{
+    position: absolute;
+    top: 7.2%;
+    width: 22px;
+    height: 22px;
+    left: -1.5%;
+}
+#fundo-cabecalho::after {
+    content: "";
+    display: block;
+    height: 15px;
+    background: url('../icones/icone-triangulos.svg') repeat-x;
+    background-size: auto 100%; 
+    background-position: center;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    top: 7.5%;
+
+}
+/* FIM DOS ESTILOS DO CABEÇALHO */
+
+/* BREAKPOINTS */
+/* Quando a tela passar de 768px (tablet e acima) */
+@media (min-width: 768px) {
+    /* Ajustes para tablet e desktop pequeno */
+  }
+  
+  /* Quando a tela passar de 992px (desktop padrão) */
+  @media (min-width: 992px) {
+    #fundo-cabecalho{
+        background-color: var(--cor-fundo-cabecalho);
+        min-height: 35vh;
+        min-width: 100vw;
+        overflow-x: hidden;
+        justify-content: space-between;
+    }
+
+  }
+  
