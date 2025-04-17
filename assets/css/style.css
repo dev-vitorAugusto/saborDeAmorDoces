@@ -21,7 +21,7 @@
 }
 .logo{
     position: absolute;
-    top: 3%;
+    top: 4%;
     z-index: 5;
 }
 nav .col a{
@@ -66,13 +66,42 @@ nav .col a{
   
   /* Quando a tela passar de 992px (desktop padrão) */
   @media (min-width: 992px) {
+
+    .logo{
+        position: absolute;
+        top: 12%;
+        z-index: 5;
+        width: auto;
+        height: auto;
+    }
     #fundo-cabecalho{
         background-color: var(--cor-fundo-cabecalho);
-        min-height: 35vh;
-        min-width: 100vw;
+        min-height: 25vh;
         overflow-x: hidden;
-        justify-content: space-between;
     }
-
+    #fundo-cabecalho::after {
+        content: "";
+        display: block;
+        height: 25px;
+        background: url('../icones/icone-triangulos.svg') repeat-x;
+        background-size: auto 100%; 
+        background-position: center;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        top: 24%;
+    
+    }
+    nav .col a{
+        font-family: 'Dancing Script';
+        text-decoration: none;
+        font-size: 2rem;
+        text-align: justify;
+        padding: 100px;
+        color: var(--cor-letras);
+    }
+    
   }
   
