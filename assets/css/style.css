@@ -95,6 +95,7 @@ nav .col a{
         background-color: var(--cor-fundo-cabecalho);
         min-height: 25vh;
         overflow-x: hidden;
+        overflow-y: hidden;
     }
     #fundo-cabecalho::after {
         content: "";
