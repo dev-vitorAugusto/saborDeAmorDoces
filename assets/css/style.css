@@ -77,8 +77,8 @@ body{
     color: var(--cor-letras);
 }
 .fundo-texto-card{
-    text-align: left;
-    width: 14rem;
+    text-align: justify;
+    width: 15rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
     font-family: 'Poppin';
