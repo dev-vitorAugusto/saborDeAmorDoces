@@ -83,6 +83,9 @@ body{
     letter-spacing: 0.1rem;
     font-family: 'Poppin';
 }
+.seta-coracao{
+    width: 135px;
+}
 /* FIM DOS ESTILOS DO CABEÇALHO */
 
 /* BREAKPOINTS */
