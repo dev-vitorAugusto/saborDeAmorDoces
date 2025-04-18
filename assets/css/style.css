@@ -16,18 +16,21 @@
 /* ESTILOS DO CABEÇALHO */
 #fundo-cabecalho{
     background-color: var(--cor-fundo-cabecalho);
-    min-height: 8vh;
+    min-height: 5rem;
     overflow-x: hidden;
+ 
 }
+
 .logo{
     position: absolute;
-    top: 4%;
+    top: 3rem;
     z-index: 5;
 }
-nav .col a{
+.corpo-links{
     font-family: 'Dancing Script';
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-align: justify;
     color: var(--cor-letras);
 }
@@ -53,7 +56,7 @@ nav .col a{
     left: 0;
     width: 100%;
     z-index: 1;
-    top: 7.4%;
+    top: 4.4rem;
     
 
 }
@@ -82,7 +85,7 @@ nav .col a{
   }
   
   /* Quando a tela passar de 992px (desktop padrão) */
-  @media (min-width: 992px) and (orientation: landscape){
+  @media (min-width: 992px){
 
     .logo{
         position: absolute;
@@ -109,7 +112,7 @@ nav .col a{
         left: 0;
         width: 100%;
         z-index: 1;
-        top: 24%;
+        top: 19%;
     
     }
     nav .col a{
@@ -127,7 +130,7 @@ nav .col a{
     
   }
 
-  @media (max-width: 768px) and (orientation: landscape) {
+  @media (max-width: 768px){
     .mt-landscape {
         margin-top: 5rem !important; /* ajuste o valor conforme o necessário */
     }
@@ -153,7 +156,7 @@ nav .col a{
 }
 
 /* Telas grandes (desktops maiores, telas full HD) */
-@media (min-width: 1367px) and (max-width: 1920px) and (orientation: landscape){
+@media (min-width: 1367px) and (max-width: 1920px){
     #fundo-cabecalho::after {
         content: "";
         display: block;
@@ -166,7 +169,7 @@ nav .col a{
         left: 0;
         width: 100%;
         z-index: 1;
-        top: 24%;
+        top: 14%;
         display: none;
     }
 }
