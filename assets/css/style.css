@@ -5,6 +5,9 @@
     box-sizing: border-box;
     margin: 0;
 }
+body{   
+    background-color: var(--cor-fundo-body)!important;
+}
 /* VARIÁVEIS DE CORES */
 :root{
     --cor-fundo-cabecalho: #EBCAB3;
@@ -59,6 +62,18 @@
     top: 4.4rem;
     
 
+}
+
+.img-fundo{
+    box-shadow: 0px 1.5px  #00000091;
+}
+.box-destaque h1{
+    position: absolute;
+}
+.titulos{
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    color: var(--cor-letras);
 }
 /* FIM DOS ESTILOS DO CABEÇALHO */
 
