@@ -93,7 +93,7 @@ body{
     color: #94745C;
     font-weight: bold;
   }
-  .btn-car{
+.btn-car{
     background-color: var(--cor-botoes);
     color: #fff;
     font-weight: 700;
