@@ -134,6 +134,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 #sacola{
     color: #fff;
+    margin: auto;
 }
 /* FIM CARDS DOS PRODUTOS */
 /* BREAKPOINTS */
