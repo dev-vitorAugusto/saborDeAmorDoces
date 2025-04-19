@@ -1,0 +1,25 @@
+/* VARIÁVEIS DE CORES */
+:root{
+    --cor-fundo-cabecalho: #EBCAB3;
+    --cor-fundo-body: #FBE8E7;
+    --cor-letras: #763123;
+    --cor-botoes: #BB8B77;
+}
+/* FIM VARIÁVEIS DE CORES */
+.block-form{
+    border: 1px solid #000;
+    width: 300px;
+    height: 400px;
+    display: flex;
+}
+input{
+    width: 250px;
+    height: 30px;
+    
+}
+.botao{
+    background-color: var(--cor-botoes);
+    color: #fff;
+    border: none;
+    width: 200px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+    <link rel="shortcut icon" href="assets/imagens/sabor_amor_doces.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Carrinho</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="tabela" id="tabela"></div>
+        <a href="index.html" type="button" class="btn btn-primary">Voltar</a>
+        <button  type="button" class="btn btn-primary" onclick="limparCarrinho()">Limpar</button>
+    </div>
+
+    <div class="container">
+        <div class="d-flex justify-content-center mt-3 mb-3">
+            <div class="block-form d-flex flex-column align-items-center">
+                <form onsubmit="event.preventDefault(); enviarPedido();" class="d-flex flex-column align-items-center">
+                    <input type="text" placeholder="Seu nome" id="clienteNome" class="mb-2 mt-5" required>
+                    <input type="text" placeholder="Endereço (opcional)" id="clienteEndereco">
+
+                    <div class="mt-2 d-flex flex-column align-items-start me-5" id="entrega">
+                        <h5>Entrega</h3>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="retirar" value="retirar" name="entrega">
+                            <label class="form-check-label" for="retirar">Retirar pessoalmente</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="delivery" value="delivery" name="entrega">
+                            <label class="form-check-label" for="delivery">Delivery*</label>
+                          </div>
+
+                          <select id="pagamento" required class="mt-2">
+                            <option disabled selected value="">Forma de pagamento</option>
+                            <option value="PIX">PIX</option>
+                            <option value="Dinheiro">Dinheiro</option>
+                            <option value="Cartão">Cartão</option>
+                          </select>
+
+                          <textarea id="observacoes" placeholder="Observações" class="mt-2" rows="2" cols="25"></textarea>
+
+                    </div>
+
+                    
+                <div class="container">
+                    <div class="d-flex justify-content-around mt-2">
+                        <h5>Total</h5>
+                        <div id="lista"></div>
+                    </div>
+                </div>
+                <button type="submit" class="botao mt-2 rounded">Enviar</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    
+
+    <form onsubmit="event.preventDefault(); enviarPedido();">
+        <input type="text" placeholder="Seu nome" id="clienteNome" required><br><br>
+        <input type="text" placeholder="Endereço (opcional)" id="clienteEndereco"><br><br>
+    
+        <div class="m-2" id="entrega">
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="retirar" value="retirar" name="entrega">
+              <label class="form-check-label" for="retirar">Retirar pessoalmente</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="delivery" value="delivery" name="entrega">
+              <label class="form-check-label" for="delivery">Delivery* <span>(Sujeito a cobrança adicional)</span></label>
+            </div>
+      </div>
+    
+        <select id="pagamento" required>
+          <option disabled selected value="">Forma de pagamento</option>
+          <option value="PIX">PIX</option>
+          <option value="Dinheiro">Dinheiro</option>
+          <option value="Cartão">Cartão</option>
+        </select><br><br>
+        <textarea id="observacoes" placeholder="Observações (opcional)"></textarea><br><br>
+        </form>
+
+<script src="scripts.js"></script>
+</body>
+</html>
