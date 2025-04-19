@@ -17,9 +17,13 @@
         <button  type="button" class="btn btn-primary" onclick="limparCarrinho()">Limpar</button>
     </div>
 
-    <div class="container">
-        <div class="d-flex justify-content-center mt-3 mb-3">
+    <div class="container mt-5">
+        <div class="d-flex flex-column align-items-center justify-content-center mt-3 mb-3">
+            <h2>Mais algumas informações ♥</h2>
+
             <div class="block-form d-flex flex-column align-items-center">
+
+
                 <form onsubmit="event.preventDefault(); enviarPedido();" class="d-flex flex-column align-items-center">
                     <input type="text" placeholder="Seu nome" id="clienteNome" class="mb-2 mt-5" required>
                     <input type="text" placeholder="Endereço (opcional)" id="clienteEndereco">
@@ -49,7 +53,7 @@
                     
                 <div class="container">
                     <div class="d-flex justify-content-around mt-2">
-                        <h5>Total</h5>
+                        <h5 class="fw-bold">Total</h5>
                         <div id="lista"></div>
                     </div>
                 </div>
