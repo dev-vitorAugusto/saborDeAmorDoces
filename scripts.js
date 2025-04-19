@@ -51,7 +51,7 @@ fetch(url)
       <h5 class="card-title fw-bold fst-italic">${nome}</h5>
       <p class="card-text text-preco fs-5">R$${preco}</p>
       <input type="number" name="" id="qtd${nome}" min="1" value="1">
-      <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded-pill btn-car mt-3">Adicionar ao carrinho</button>
+      <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded-pill btn-car mt-3">Adicionar a sacola</button>
     </div>
   </div>
 </div>
