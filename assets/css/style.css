@@ -117,7 +117,24 @@ input[type=number]::-webkit-inner-spin-button {
   } 
  /* ESTILO DA TABELA DO CARRINHO */
  
-
+/*  botão flutuante CARRINHO */
+.carrinho-flutuante{
+    position: fixed; 
+    width:60px; 
+    height:60px; 
+    bottom:40px; 
+    right:40px; 
+    background-color: var(--cor-letras); 
+    color:#FFF; 
+    border-radius:50px; 
+    text-align:center; 
+    font-size:30px; 
+    box-shadow: 1px 1px 2px #888;
+    z-index:100; 
+}
+#sacola{
+    color: #fff;
+}
 /* FIM CARDS DOS PRODUTOS */
 /* BREAKPOINTS */
 /* Quando a tela passar de 768px (tablet e acima) */
