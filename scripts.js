@@ -49,7 +49,7 @@ fetch(url)
     <img src="${img}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title fw-bold fst-italic">${nome}</h5>
-      <p class="card-text text-preco fs-5">R$${preco}</p>
+      <p class="card-text text-preco fs-5">${preco}</p>
       <input type="number" name="" id="qtd${nome}" min="1" value="1">
       <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded-pill btn-car mt-3">Adicionar ao carrinho</button>
     </div>
