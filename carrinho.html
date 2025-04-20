@@ -5,16 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/carrinho.css">
     <link rel="shortcut icon" href="assets/imagens/sabor_amor_doces.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>Carrinho</title>
 </head>
 <body>
 
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid d-flex align-items-center justify-content-center">
+                <img src="assets/imagens/sabor_amor_doces.jpg" alt="Logo" width="70" height="70" class="d-inline-block rounded-pill align-text-top">
+                <p class="ms-2 p-0 m-0 titulo"><span class="color-1">Sabor</span> <span class="color-2">de</span> <span class="color-3">amor</span></p>
+            </div>
+          </nav>
+    </header>
+
 
     <div class="container">
+
+        <div class="row mt-3">
+            <div class="col-10">
+                <div class="d-flex align-items-center">
+                <img src="assets/icones/icone-sacola.svg" alt="" width="40" height="40">
+                <p class="m-0 texto-sacola">Sacola</p>
+            </div>
+            <hr class="m-1">
+            </div>
+        </div>
+
         <div class="tabela" id="tabela"></div>
-        <a href="index.html" type="button" class="btn btn-primary">Voltar</a>
-        <button  type="button" class="btn btn-primary" onclick="limparCarrinho()">Limpar</button>
+        <a href="index.html" type="button" class=""><button class="btn-form"><i class="bi bi-caret-left"></i> Voltar</button></a>
+        <button  type="button" class="btn-form" onclick="limparCarrinho()"><i class="bi bi-trash"></i> Limpar</button>
     </div>
 
     <div class="container mt-5">
@@ -25,8 +46,15 @@
 
 
                 <form onsubmit="event.preventDefault(); enviarPedido();" class="d-flex flex-column align-items-center">
-                    <input type="text" placeholder="Seu nome" id="clienteNome" class="mb-2 mt-5" required>
-                    <input type="text" placeholder="Endereço (opcional)" id="clienteEndereco">
+                    <div class="">
+                        <i class="bi bi-person position-absolute mt-5 pt-1"></i>
+                        <input type="text" placeholder="Seu nome" id="clienteNome" class="mb-2 mt-5 ps-4" required>
+                    </div>
+
+                    <div class="">
+                        <i class="bi bi-pin position-absolute mt-2 pt-1"></i>
+                        <input type="text" placeholder="Endereço (opcional)" id="clienteEndereco" class="mb-2 mt-2 ps-4">
+                    </div>
 
                     <div class="mt-2 d-flex flex-column align-items-start me-5" id="entrega">
                         <h5>Entrega</h3>

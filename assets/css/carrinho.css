@@ -11,7 +11,7 @@
 }
 /* FIM VARIÁVEIS DE CORES */
 .block-form{
-    border: 1px solid #000;
+    border: 1px dotted #000;
     width: 300px;
     height: 400px;
     display: flex;
@@ -19,14 +19,16 @@
 input{
     width: 250px;
     height: 30px;
+    border: none;
+    border-bottom: 1px solid #000;
 }
 .botao{
     background-color: var(--cor-letras);
     color: #fff;
     border: none;
-    width: 200px;
+    width: 250px;
     letter-spacing: 1px;
-    font-family: 'Poppin';
+    font-family: 'Poppins';
 }
 h2{
     font-family: 'Dancing Script';
@@ -34,5 +36,30 @@ h2{
 }
 h5{
     letter-spacing: 1px;
-    font-family: 'Poppin';
+    font-family: 'Poppins';
+}
+.btn-form{
+    background-color: var(--cor-letras);
+    color: var(--cor-fundo-cabecalho);
+    font-family: 'Poppins';
+    box-shadow: 2px 2px #000;
+    border: 1px solid var(--cor-letras);
+}
+.titulo{
+    font-family: 'Dancing Script';
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+.color-1{
+    color: var(--cor-letras);
+}
+.color-2{
+    color: var(--cor-fundo-cabecalho);
+}
+.color-3{
+    color: var(--cor-letras);
+}
+.texto-sacola{
+    font-family: 'Poppins';
+    font-size: 1.4rem;
 }
