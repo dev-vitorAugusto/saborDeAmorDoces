@@ -141,9 +141,9 @@ input[type=number]::-webkit-inner-spin-button {
 /* FIM CARDS DOS PRODUTOS */
 /* BREAKPOINTS */
 /* Quando a tela passar de 768px (tablet e acima) */
-@media (min-width: 768px) and (orientation: landscape){
+/* @media (min-width: 768px) and (orientation: landscape){ */
     /* Ajustes para tablet e desktop pequeno */
-    #fundo-cabecalho::after {
+    /* #fundo-cabecalho::after {
         content: "";
         display: block;
         height: 25px;
@@ -159,10 +159,10 @@ input[type=number]::-webkit-inner-spin-button {
     
     }
 
-  }
+  } */
   
   /* Quando a tela passar de 992px (desktop padrão) */
-  @media (min-width: 992px){
+  /* @media (min-width: 992px){
 
     .logo{
         position: absolute;
@@ -205,7 +205,7 @@ input[type=number]::-webkit-inner-spin-button {
         margin-top: 5rem;
     }
     
-  }
+  } */
 
   /* CELULAR / TABLET DEITADO */
   @media (max-width: 768px) and (orientation: landscape){
@@ -236,7 +236,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 /* Telas médias (laptops pequenos, desktops comuns) */
-@media (min-width: 1025px) and (max-width: 1366px) {
+/* @media (min-width: 1025px) and (max-width: 1366px) {
     #fundo-cabecalho::after {
         content: "";
         display: block;
@@ -252,10 +252,10 @@ input[type=number]::-webkit-inner-spin-button {
         top: 9%;
         display: none;    
     }
-}
+} */
 
 /* Telas grandes (desktops maiores, telas full HD) */
-@media (min-width: 1367px) and (max-width: 1920px){
+/* @media (min-width: 1367px) and (max-width: 1920px){
     #fundo-cabecalho::after {
         content: "";
         display: block;
@@ -271,5 +271,5 @@ input[type=number]::-webkit-inner-spin-button {
         top: 14%;
         display: none;
     }
-}
+} */
   
