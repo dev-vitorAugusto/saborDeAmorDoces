@@ -156,3 +156,19 @@ function limparCarrinho(){
   alert('Carrinho vazio!')
   location.reload();
 }
+
+// BOTÃO FLUTUANTE VOLTAR AO TOPO
+window.onscroll = function () {
+  const btn = document.getElementById('btnTopo');
+
+  if(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// VOLTAR AO TOPO
+document.getElementById('btnTopo').onclick = function() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
