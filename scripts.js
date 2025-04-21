@@ -42,11 +42,11 @@ fetch(url)
       const img = row[4] || 'Sem imagem';
 
       const div = document.createElement('div');
-      div.className = 'produto ';
+      div.className = 'produto col-md-4 d-flex justify-content-center mb-4';
       div.innerHTML = `
           <div class="modelo-produto">
   <div class="card border-0 mb-3" style="width: 14rem;">
-    <img src="${img}" class="card-img-top" alt="...">
+    <img src="${img}" class="card-img-top" alt="..." width="400px" height="200px">
     <div class="card-body">
       <h5 class="card-title fw-bold fst-italic">${nome}</h5>
       <p class="card-text text-preco fs-5">R$${preco}</p>
