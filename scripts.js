@@ -37,9 +37,11 @@ fetch(url)
     // Percorre as linhas, ignorando o cabeçalho
     for (let i = 1; i < rows.length; i++) {
       const row = rows[i];
+      const desc = row[1] || 'Sem descrição';
       const nome = row[2] || 'Sem nome';
       const preco = row[3] || 'Sem preço';
       const img = row[4] || 'Sem imagem';
+      
 
       const div = document.createElement('div');
       div.className = 'produto col-md-4 d-flex justify-content-center mb-4';
@@ -50,6 +52,16 @@ fetch(url)
     <div class="card-body">
       <h5 class="card-title fw-bold fst-italic">${nome}</h5>
       <p class="card-text text-preco fs-5">R$${preco}</p>
+      <p class="d-inline-flex gap-1">
+  <a class="" data-bs-toggle="collapse" href="#collapseExample${i}" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Desc... 
+  </a>
+</p>
+<div class="collapse" id="collapseExample${i}">
+  <div class="card card-body">
+  ${desc}
+  </div>
+</div><br>
       <input type="number" name="" id="qtd${nome}" min="1" value="1">
       <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded-pill btn-car mt-3">Adicionar a sacola</button>
     </div>

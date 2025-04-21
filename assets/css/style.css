@@ -125,7 +125,13 @@ input[type=number]::-webkit-inner-spin-button {
     border: none;
   } 
  /* ESTILO DA TABELA DO CARRINHO */
+ /* DESCRIÇÃO PRODUTO */
+ .desc {
+
+  
  
+  }
+  
 /*  botão flutuante CARRINHO */
 .carrinho-flutuante{
     position: fixed; 
