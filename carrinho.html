@@ -20,77 +20,83 @@
           </nav>
     </header>
 
-
-    <div class="container">
-
-        <div class="row mt-3">
-            <div class="col-10">
-                <div class="d-flex align-items-center">
-                <img src="assets/icones/icone-sacola.svg" alt="" width="40" height="40">
-                <p class="m-0 texto-sacola">Sacola</p>
-            </div>
-            <hr class="m-1">
-            </div>
-        </div>
-
-        <div class="tabela" id="tabela"></div>
-        <a href="index.html" type="button" class=""><button class="btn-form"><i class="bi bi-caret-left"></i> Voltar</button></a>
-        <button  type="button" class="btn-form" onclick="limparCarrinho()"><i class="bi bi-trash"></i> Limpar</button>
-    </div>
-
-    <div class="container mt-5">
-        <div class="d-flex flex-column align-items-center justify-content-center mt-3 mb-3">
-            <h2>Mais algumas informações ♥</h2>
-
-            <div class="block-form d-flex flex-column align-items-center">
-
-
-                <form onsubmit="event.preventDefault(); enviarPedido();" class="d-flex flex-column align-items-center">
-                    <div class="">
-                        <i class="bi bi-person position-absolute mt-5 pt-1"></i>
-                        <input type="text" placeholder="Seu nome" id="clienteNome" class="mb-2 mt-5 ps-4" required>
-                    </div>
-
-                    <div class="">
-                        <i class="bi bi-pin position-absolute mt-2 pt-1"></i>
-                        <input type="text" placeholder="Endereço (opcional)" id="clienteEndereco" class="mb-2 mt-2 ps-4">
-                    </div>
-
-                    <div class="mt-2 d-flex flex-column align-items-start me-5" id="entrega">
-                        <h5>Entrega</h3>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="retirar" value="retirar" name="entrega">
-                            <label class="form-check-label" for="retirar">Retirar pessoalmente</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="delivery" value="delivery" name="entrega">
-                            <label class="form-check-label" for="delivery">Delivery*</label>
-                          </div>
-
-                          <select id="pagamento" required class="mt-2">
-                            <option disabled selected value="">Forma de pagamento</option>
-                            <option value="PIX">PIX</option>
-                            <option value="Dinheiro">Dinheiro</option>
-                            <option value="Cartão">Cartão</option>
-                          </select>
-
-                          <textarea id="observacoes" placeholder="Observações" class="mt-2" rows="2" cols="25"></textarea>
-
-                    </div>
-
-                    
+        <div class="container">
+             
+        <div class="row">
+            <div class="col-md-8">
                 <div class="container">
-                    <div class="d-flex justify-content-around mt-2">
-                        <h5 class="fw-bold">Total</h5>
-                        <div id="lista"></div>
+
+                    <div class="row mt-3">
+                        <div class="col-10">
+                            <div class="d-flex align-items-center">
+                            <img src="assets/icones/icone-sacola.svg" alt="" width="40" height="40">
+                            <p class="m-0 texto-sacola">Sacola</p>
+                        </div>
+                        <hr class="m-1">
+                        </div>
                     </div>
-                </div>
-                <button type="submit" class="botao mt-2 rounded">Enviar</button>
-                </form>
+            
+                    <div class="tabela" id="tabela"></div>
+                    <a href="index.html" type="button" class=""><button class="btn-form"><i class="bi bi-caret-left"></i> Voltar</button></a>
+                    <button  type="button" class="btn-form" onclick="limparCarrinho()"><i class="bi bi-trash"></i> Limpar</button>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="container mt-5">
+                    <div class="d-flex flex-column align-items-center justify-content-center mt-3 mb-3">
+                        <h2>Mais algumas informações ♥</h2>
+            
+                        <div class="block-form d-flex flex-column align-items-center">
+            
+            
+                            <form onsubmit="event.preventDefault(); enviarPedido();" class="d-flex flex-column align-items-center">
+                                <div class="">
+                                    <i class="bi bi-person position-absolute mt-5 pt-1"></i>
+                                    <input type="text" placeholder="Seu nome" id="clienteNome" class="mb-2 mt-5 ps-4" required>
+                                </div>
+            
+                                <div class="">
+                                    <i class="bi bi-pin position-absolute mt-2 pt-1"></i>
+                                    <input type="text" placeholder="Endereço (opcional)" id="clienteEndereco" class="mb-2 mt-2 ps-4">
+                                </div>
+            
+                                <div class="mt-2 d-flex flex-column align-items-start me-5" id="entrega">
+                                    <h5>Entrega</h3>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="retirar" value="retirar" name="entrega">
+                                        <label class="form-check-label" for="retirar">Retirar pessoalmente</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="delivery" value="delivery" name="entrega">
+                                        <label class="form-check-label" for="delivery">Delivery*</label>
+                                      </div>
+            
+                                      <select id="pagamento" required class="mt-2">
+                                        <option disabled selected value="">Forma de pagamento</option>
+                                        <option value="PIX">PIX</option>
+                                        <option value="Dinheiro">Dinheiro</option>
+                                        <option value="Cartão">Cartão</option>
+                                      </select>
+            
+                                      <textarea id="observacoes" placeholder="Observações" class="mt-2" rows="2" cols="25"></textarea>
+            
+                                </div>
+            
+                                
+                            <div class="container">
+                                <div class="d-flex justify-content-around mt-2">
+                                    <h5 class="fw-bold">Total</h5>
+                                    <div id="lista"></div>
+                                </div>
+                            </div>
+                            <button type="submit" class="botao mt-2 rounded">Enviar</button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
-    
+        </div>
 
 <script src="scripts.js"></script>
 </body>
