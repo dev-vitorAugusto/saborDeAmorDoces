@@ -235,6 +235,17 @@ input[type=number]::-webkit-inner-spin-button {
     }
 }
 
+@media (max-width: 768px){
+    .fundo-texto-card-sobre{
+        text-align: justify;
+        width: 40rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        font-family: 'Poppin';
+        margin: 30px;
+        color: var(--cor-letras);
+    }
+}
 /* Telas médias (laptops pequenos, desktops comuns) */
 /* @media (min-width: 1025px) and (max-width: 1366px) {
     #fundo-cabecalho::after {

@@ -42,7 +42,7 @@ fetch(url)
       const img = row[4] || 'Sem imagem';
 
       const div = document.createElement('div');
-      div.className = 'produto';
+      div.className = 'produto ';
       div.innerHTML = `
           <div class="modelo-produto">
   <div class="card border-0 mb-3" style="width: 14rem;">
