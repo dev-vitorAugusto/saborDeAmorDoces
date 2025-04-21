@@ -82,6 +82,8 @@ body{
     font-weight: 500;
     letter-spacing: 0.1rem;
     font-family: 'Poppin';
+    margin: 30px;
+    color: var(--cor-letras);
 }
 .seta-coracao{
     width: 135px;
@@ -205,9 +207,31 @@ input[type=number]::-webkit-inner-spin-button {
     
   }
 
-  @media (max-width: 768px){
-    .mt-landscape {
-        margin-top: 5rem !important; /* ajuste o valor conforme o necessário */
+  /* CELULAR / TABLET DEITADO */
+  @media (max-width: 768px) and (orientation: landscape){
+    #fundo-cabecalho::after {
+        content: "";
+        display: block;
+        height: 25px;
+        background: url('../icones/icone-triangulos.svg') repeat-x;
+        background-size: auto 100%; 
+        background-position: center;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        top: 17%;
+         
+    }
+    .fundo-texto-card{
+        text-align: justify;
+        width: 24rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        font-family: 'Poppin';
+        margin: 30px;
+        color: var(--cor-letras);
     }
 }
 
