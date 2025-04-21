@@ -211,7 +211,7 @@ input[type=number]::-webkit-inner-spin-button {
   @media (max-width: 768px) and (orientation: landscape){
     #fundo-cabecalho::after {
         content: "";
-        display: block;
+        display: none;
         height: 25px;
         background: url('../icones/icone-triangulos.svg') repeat-x;
         background-size: auto 100%; 
