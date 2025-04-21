@@ -235,7 +235,7 @@ input[type=number]::-webkit-inner-spin-button {
     }
 }
 
-@media (max-width: 768px){
+@media (min-width: 768px){
     .fundo-texto-card-sobre{
         text-align: justify;
         width: 40rem;
