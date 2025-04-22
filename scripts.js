@@ -39,7 +39,7 @@ fetch(url)
       const row = rows[i];
       const desc = row[1] || 'Sem descrição';
       const nome = row[2] || 'Sem nome';
-      const preco = row[3] || 'Sem preço';
+      const preco = row[3].toString().replace(',', '.') || 'Sem preço';
       const img = row[4] || 'Sem imagem';
       
 
