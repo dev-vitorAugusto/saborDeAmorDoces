@@ -180,7 +180,3 @@ window.onscroll = function () {
   }
 };
 
-// VOLTAR AO TOPO
-document.getElementById('btnTopo').onclick = function() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-}

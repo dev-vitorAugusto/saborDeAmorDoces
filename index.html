@@ -160,14 +160,17 @@ rel="stylesheet"
                         <div class="col- col-md-5">
                           
                               <h4 class="titulos fs-1 text-center">Fale conosco</h4>
-                            <form action="" class="mt-4">
+                            <form action="https://formsubmit.co/vitoraugustotrb@gmail.com" method="post" class="mt-4" target="_top">
                                 <div class="d-flex flex-column">
-                                  <input type="text" placeholder="   Me diga seu nome" class="mb-3 rounded-pill border border-1 border-dark">
-                                  <textarea name="" id="" placeholder="Deixe aqui sua mensagem" class="rounded"></textarea>
+                                  <input type="text" placeholder="   Me diga seu nome" name="nome" class="mb-3 rounded-pill border border-1 border-dark">
+                                  <textarea name="mensagem" id="" placeholder="Deixe aqui sua mensagem"  class="rounded"></textarea>
                                 </div>
                                 <div class="row">
                                 <div class="col d-flex justify-content-center mt-3">
                                   <button type="submit" class="btn btn-danger  rounded-pill">Enviar</button>
+
+                                  <input type="hidden" name="_captcha" value="false">
+                                  <input type="hidden" name="_next" value="https://sabor-de-amor-doces.vercel.app/">
                                 </div>
                               </div>
                             </form>
