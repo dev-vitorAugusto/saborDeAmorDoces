@@ -7,12 +7,29 @@ function addToCart(nome, preco, inputId) {
     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
     carrinho.push({ nome, preco, quantidade});
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    alert(`${nome} adicionado ao carrinho!`);
+
+    // CHAMANDO A FUNÇÃO DE EXIBIR ALERTA E PASSANDO OS PARÂMETROS
+    exibirToast(`${nome} adicionado ao carrinho!`, 'success');
+
 
     const alertaCarrinho = document.querySelector('.alerta');
-alertaCarrinho.classList.remove('d-none'); 
+    alertaCarrinho.classList.remove('d-none'); 
 }
 // FIM
+// FUNÇÃ DE EXIBIR ALERTE
+function exibirToast(mensagem, tipo = 'success') {
+  const toastMensagem = document.getElementById('mensagemAlerta');
+  const toastEl = document.getElementById('toastCarrinho');
+
+  // MOSTRANDO A MENSAGEM
+  toastMensagem.textContent = mensagem;
+  toastEl.className = `toast align-items-center text-bg-${tipo} border-0`; // EXIBINDO COM O TIPO 'SUCCESS' 
+
+  // MOSTRA O TOAST
+  const toast = new bootstrap.Toast(toastEl);
+  toast.show();
+}
+// FIM DA FUNÇÃO DE EXIBIR ALERTA
 
 // CONEXÃO COM A PLANILHA DA GOOGLE SHEETS
 const SPREADSHEET_ID = '1_oGHGUaZN1R7OknwnMLNzU6_JyT8Xu0LN_nZb6UveRU';
@@ -63,7 +80,7 @@ fetch(url)
   </div>
 </div><br>
       <input type="number" name="" id="qtd${nome}" min="1" value="1">
-      <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded-pill btn-car mt-3">Adicionar a sacola</button>
+      <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded-pill btn-car mt-3" id="liveToastBtn">Adicionar a sacola</button>
     </div>
   </div>
 </div>
