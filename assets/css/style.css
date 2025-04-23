@@ -173,6 +173,12 @@ footer{
     font-family: 'Poppins';
     color: var(--cor-letras);
 }
+.carousel-pc{
+    display: none;
+}
+.embed-insta{
+    display: none;
+}
 /* FIM CARDS DOS PRODUTOS */
 /* BREAKPOINTS */
 /* Quando a tela passar de 768px (tablet e acima) */
@@ -197,50 +203,15 @@ footer{
   } */
   
   /* Quando a tela passar de 992px (desktop padrão) */
-  /* @media (min-width: 992px){
+   @media (min-width: 992px){
 
-    .logo{
-        position: absolute;
-        top: 12%;
-        z-index: 5;
-        width: auto;
-        height: auto;
+    .carrosel-mobile{
+        display: none;
     }
-    #fundo-cabecalho{
-        background-color: var(--cor-fundo-cabecalho);
-        min-height: 25vh;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-    #fundo-cabecalho::after {
-        content: "";
+    .embed-insta{
         display: block;
-        height: 25px;
-        background: url('../icones/icone-triangulos.svg') repeat-x;
-        background-size: auto 100%; 
-        background-position: center;
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-        top: 19%;
-    
     }
-    nav .col a{
-        font-family: 'Dancing Script';
-        text-decoration: none;
-        font-size: 2rem;
-        text-align: justify;
-        padding: 100px;
-        color: var(--cor-letras);
-    }
-
-    nav .row{
-        margin-top: 5rem;
-    }
-    
-  } */
+  } 
 
   /* CELULAR / TABLET DEITADO */
   @media (max-width: 768px) and (orientation: landscape){
@@ -268,6 +239,7 @@ footer{
         margin: 30px;
         color: var(--cor-letras);
     }
+ 
 }
 
 @media (min-width: 768px){
@@ -280,6 +252,8 @@ footer{
         margin: 30px;
         color: var(--cor-letras);
     }
+
+    
 }
 /* Telas médias (laptops pequenos, desktops comuns) */
 /* @media (min-width: 1025px) and (max-width: 1366px) {

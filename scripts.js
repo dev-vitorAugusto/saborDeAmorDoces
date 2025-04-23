@@ -199,14 +199,20 @@ function limparCarrinho(){
     }, 800);
 }
 
-// BOTÃO FLUTUANTE VOLTAR AO TOPO
-window.onscroll = function () {
-  const btn = document.getElementById('btnTopo');
+// TESTE
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+  },
+});
 
-  if(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
-};
-
+// Instagram embed
+window.instgrm.Embeds.process();
