@@ -9,14 +9,14 @@ function addToCart(nome, preco, inputId) {
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
 
     // CHAMANDO A FUNÇÃO DE EXIBIR ALERTA E PASSANDO OS PARÂMETROS
-    exibirToast(`${nome} adicionado ao carrinho!`, 'success');
+    exibirToast(`${nome} adicionado a sacola!`, 'success');
 
 
     const alertaCarrinho = document.querySelector('.alerta');
     alertaCarrinho.classList.remove('d-none'); 
 }
 // FIM
-// FUNÇÃ DE EXIBIR ALERTE
+// FUNÇÃ DE EXIBIR ALERT
 function exibirToast(mensagem, tipo = 'success') {
   const toastMensagem = document.getElementById('mensagemAlerta');
   const toastEl = document.getElementById('toastCarrinho');
@@ -61,17 +61,17 @@ fetch(url)
       
 
       const div = document.createElement('div');
-      div.className = 'produto col-md-4 d-flex justify-content-center mb-4';
+      div.className = 'produto col-md-6 col-lg-4 d-flex justify-content-center mb-4';
       div.innerHTML = `
           <div class="modelo-produto">
-  <div class="card border-0 mb-3" style="width: 14rem;">
+  <div class="card border-0 mb-3" style="width: 15.5rem;">
     <img src="${img}" class="card-img-top" alt="..." width="400px" height="200px">
     <div class="card-body">
-      <h5 class="card-title fw-bold fst-italic">${nome}</h5>
+      <h5 class="card-title titulo-card fw-bold fst-italic no-break text-center">${nome}</h5>
       <p class="card-text text-preco fs-5">R$${preco}</p>
       <p class="d-inline-flex gap-1">
-  <a class="" data-bs-toggle="collapse" href="#collapseExample${i}" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Desc... 
+  <a class="text-danger p-0 m-0 text-decoration-none fw-semibold" data-bs-toggle="collapse" href="#collapseExample${i}" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Ver mais... 
   </a>
 </p>
 <div class="collapse" id="collapseExample${i}">
@@ -79,8 +79,10 @@ fetch(url)
   ${desc}
   </div>
 </div><br>
-      <input type="number" name="" id="qtd${nome}" min="1" value="1">
-      <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded-pill btn-car mt-3" id="liveToastBtn">Adicionar a sacola</button>
+      <input type="number" name="" id="qtd${nome}" min="1" value="1" class="">
+      <div class="d-flex align-items-end justify-content-center">
+      <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded shadow btn-car " id="liveToastBtn">Adicionar a sacola</button>
+      </div>
     </div>
   </div>
 </div>
@@ -182,8 +184,19 @@ function enviarPedido() {
 
 function limparCarrinho(){
   localStorage.removeItem('carrinho');
-  alert('Carrinho vazio!')
-  location.reload();
+    const toastMensagemCarrinho = document.getElementById('mensagemAlertaLimpo');
+    const toastElemento = document.getElementById('toastCarrinhoLimpo');
+
+  // MOSTRANDO A MENSAGEM
+  toastMensagemCarrinho.textContent = 'Sacola vazia!';
+  toastElemento.className = `toast align-items-center border-0 bg-danger text-light`; // EXIBINDO COM O TIPO 'SUCCESS' 
+
+  // MOSTRA O TOAST
+  const toastTeste = new bootstrap.Toast(toastElemento);
+  toastTeste.show();
+    setTimeout(() => {
+      location.reload();
+    }, 800);
 }
 
 // BOTÃO FLUTUANTE VOLTAR AO TOPO

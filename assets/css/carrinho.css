@@ -9,6 +9,9 @@
     --cor-letras: #763123;
     --cor-botoes: #BB8B77;
 }
+body{
+    
+}
 /* FIM VARIÁVEIS DE CORES */
 .block-form{
     border: 1px dotted #000;

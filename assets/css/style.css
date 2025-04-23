@@ -48,6 +48,9 @@ body{
 .no-break{
     white-space: nowrap;
 }
+.titulo-card{
+    font-size: 1.1rem;
+}
 .triangulo{
     position: absolute;
     top: 7.2%;
