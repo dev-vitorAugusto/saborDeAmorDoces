@@ -179,6 +179,9 @@ footer{
 .embed-insta{
     display: none;
 }
+.form-pc{
+    display: none;
+}
 /* FIM CARDS DOS PRODUTOS */
 /* BREAKPOINTS */
 /* Quando a tela passar de 768px (tablet e acima) */
@@ -209,6 +212,12 @@ footer{
         display: none;
     }
     .embed-insta{
+        display: block;
+    }
+    .form-mobile{
+        display: none;
+    }
+    .form-pc{
         display: block;
     }
   } 
