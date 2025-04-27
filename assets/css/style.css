@@ -76,7 +76,9 @@ body{
 
 }
 
-
+.img-fundo{
+    width: auto;
+}
 .box-destaque h1{
     position: absolute;
 }
