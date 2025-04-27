@@ -81,7 +81,7 @@ fetch(url)
 </div><br>
       <input type="number" name="" id="qtd${nome}" min="1" value="1" class="">
       <div class="d-flex align-items-end justify-content-center">
-      <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded shadow btn-car " id="liveToastBtn">Adicionar a sacola</button>
+      <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded  btn-car " id="liveToastBtn">Adicionar à sacola</button>
       </div>
     </div>
   </div>

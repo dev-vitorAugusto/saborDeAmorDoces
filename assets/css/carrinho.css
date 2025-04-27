@@ -14,7 +14,7 @@ body{
 }
 /* FIM VARIÁVEIS DE CORES */
 .block-form{
-    border: 1px dotted #000;
+    border: 1px solid #000;
     width: 300px;
     height: 400px;
     display: flex;
