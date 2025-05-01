@@ -28,13 +28,16 @@ body{
 
 header{
     background-image: url('../imagens/imagem-fundo.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
     height: 50vh;
     margin: 0;
-    box-shadow: inset 1px 1px 100px rgba(255, 255, 255, 0.562);
+    box-shadow: inset 1px 1px 100px rgba(255, 255, 255, 0.24);
   }
   #texto-fundo{
     font-size: 3rem;
-    font-weight: medium;
+    font-weight: 100;
     color: var(--cor-letras);
     font-family: 'Dancing script';
     letter-spacing: 5px;
@@ -71,7 +74,7 @@ header{
     text-align: justify;
     color: var(--cor-letras);
     cursor: pointer;
-    box-shadow: 0.5px 0.5px 0.5px #000;
+    text-shadow: 0.5px 0.5px 0.5px #0000005d;
 }
 .btn{
     background-color: #763123 !important;
