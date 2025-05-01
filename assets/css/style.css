@@ -35,6 +35,9 @@ header{
     margin: 0;
     box-shadow: inset 1px 1px 100px rgba(255, 255, 255, 0.24);
   }
+  .nav{
+    background-color: var(--cor-fundo-body);
+  }
   #texto-fundo{
     font-size: 3rem;
     font-weight: 100;
