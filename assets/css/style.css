@@ -28,9 +28,9 @@ body{
 
 header{
     background-image: url('../imagens/imagem-fundo.png');
-    height: 70vh;
+    height: 50vh;
     margin: 0;
-    box-shadow: inset 1px 1px 100px rgba(255, 255, 255, 0.884);
+    box-shadow: inset 1px 1px 100px rgba(255, 255, 255, 0.562);
   }
   #texto-fundo{
     font-size: 3rem;
