@@ -1,3 +1,9 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+  var slogan = document.getElementById("texto-slogan"); 
+  slogan.classList.remove('d-none');
+  slogan.classList.add("animate__backInUp animate__delay-5s")
+});
 // ADICIONAR AO CARRINHO
 function addToCart(nome, preco, inputId) {
 

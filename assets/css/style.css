@@ -26,17 +26,48 @@ body{
  
 }
 
-
+header{
+    background-image: url('../imagens/imagem-fundo.png');
+    height: 70vh;
+    margin: 0;
+    box-shadow: inset 1px 1px 100px rgba(255, 255, 255, 0.884);
+  }
+  #texto-fundo{
+    font-size: 3rem;
+    font-weight: medium;
+    color: var(--cor-letras);
+    font-family: 'Dancing script';
+    letter-spacing: 5px;
+  }
+  #titulo-fundo{
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Dancing Script';
+  }
+  #texto-fundo-corpo{
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Poppins';
+  }
+  #texto-slogan{
+    font-family: 'Dancing Script';
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: var(--cor-letras);
+  }
 .logo{
     position: absolute;
-    top: 3rem;
+    top: 4rem;
     z-index: 5;
 }
 .corpo-links{
     font-family: 'Dancing Script';
     text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: bolder;
     text-align: justify;
     color: var(--cor-letras);
     cursor: pointer;
