@@ -71,6 +71,13 @@ header{
     text-align: justify;
     color: var(--cor-letras);
     cursor: pointer;
+    box-shadow: 0.5px 0.5px 0.5px #000;
+}
+.btn{
+    background-color: #763123 !important;
+    color: #fff !important;
+    font-family: 'Poppins';
+    box-shadow: 3px 3px 3px #000;
 }
 .corpo-links:hover{
     color: var(--cor-botoes);
