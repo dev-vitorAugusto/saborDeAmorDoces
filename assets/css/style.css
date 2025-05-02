@@ -39,7 +39,7 @@ header{
     background-color: var(--cor-fundo-body);
   }
   #texto-fundo{
-    font-size: 33px;
+    font-size: 30px;
     font-weight: bolder;
     color: var(--cor-letras);
     font-family: 'Dancing script';
