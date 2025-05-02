@@ -33,15 +33,15 @@ header{
     background-size: cover;
     height: 50vb;
     margin: 0;
-    box-shadow: inset 1px 1px 100px rgba(255, 255, 255, 0.24);
+    box-shadow: inset 1px 2px 100px rgba(0, 0, 0, 0.74);
   }
   .nav{
     background-color: var(--cor-fundo-body);
   }
   #texto-fundo{
     font-size: 30px;
-    font-weight: bolder;
-    color: var(--cor-letras);
+    font-weight: bolder !important;
+    color: #000;
     font-family: 'Dancing script';
     letter-spacing: 4px;
   }
@@ -62,7 +62,7 @@ header{
     font-size: 28px;
     font-weight: bolder;
     letter-spacing: 5px;
-    color: var(--cor-letras);
+    color: #000;
   }
 .logo{
     position: absolute;
