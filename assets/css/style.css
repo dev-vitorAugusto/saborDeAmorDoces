@@ -39,8 +39,8 @@ header{
     background-color: var(--cor-fundo-body);
   }
   #texto-fundo{
-    font-size: 3rem;
-    font-weight: 100;
+    font-size: 2rem;
+    font-weight: 800;
     color: var(--cor-letras);
     font-family: 'Dancing script';
     letter-spacing: 5px;
