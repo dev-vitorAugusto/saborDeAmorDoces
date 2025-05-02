@@ -41,9 +41,14 @@ header{
   #texto-fundo{
     font-size: 30px;
     font-weight: bolder !important;
-    color: #000;
+    color: var(--cor-letras);
     font-family: 'Dancing script';
     letter-spacing: 4px;
+  }
+  .fundo-texto-card {
+    text-align: center;
+    white-space: initial;
+    font-size: 300px;
   }
   #titulo-fundo{
     font-size: 30px;
@@ -134,7 +139,7 @@ header{
 .fundo-texto-card{
     text-align: justify;
     width: 75%;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.1rem;
     font-family: 'Poppins';
     margin: 25px;
