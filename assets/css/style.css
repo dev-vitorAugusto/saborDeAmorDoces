@@ -33,7 +33,7 @@ header{
     background-size: cover;
     height: 50vb;
     margin: 0;
-    box-shadow: inset 1px 2px 100px rgba(0, 0, 0, 0.74);
+    box-shadow: inset 1px 2px 100px var(--cor-fundo-body);
   }
   .nav{
     background-color: var(--cor-fundo-body);
