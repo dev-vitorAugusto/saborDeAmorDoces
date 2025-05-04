@@ -149,6 +149,13 @@ header{
 .seta-coracao{
     width: 135px;
 }
+
+.modal-sobre-entrega{
+    background-color: var(--cor-fundo-body) !important;
+}
+.titulo-modal-entrega{
+    color: var(--cor-letras);
+}
 /* FIM DOS ESTILOS DO CABEÇALHO */
 
 /* CARD DOS PRODUTOS */
