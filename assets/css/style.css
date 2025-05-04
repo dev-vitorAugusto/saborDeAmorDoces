@@ -154,6 +154,11 @@ header{
     background-color: var(--cor-fundo-body) !important;
 }
 .titulo-modal-entrega{
+    color: var(--cor-letras) !important;
+    font-family: 'Dancing Script';
+    font-size: 30px;
+}
+.modal-body{
     color: var(--cor-letras);
 }
 /* FIM DOS ESTILOS DO CABEÇALHO */
