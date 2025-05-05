@@ -1,3 +1,9 @@
+document.addEventListener("keydown", function(e) {
+  if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+    e.preventDefault(); // impede F12 ou Ctrl + Shift + I
+    alert("Abertura do inspecionar desativada!");
+  }
+});
 
 document.addEventListener("DOMContentLoaded", function() {
   var slogan = document.getElementById("texto-slogan"); 
@@ -37,14 +43,7 @@ function exibirToast(mensagem, tipo = 'success') {
 }
 // FIM DA FUNÇÃO DE EXIBIR ALERTA
 
-// CONEXÃO COM A PLANILHA DA GOOGLE SHEETS
-const SPREADSHEET_ID = '1_oGHGUaZN1R7OknwnMLNzU6_JyT8Xu0LN_nZb6UveRU';
-const API_KEY = 'AIzaSyAotIWBpB3Cj2aLCzaKDFl2p8YYFGaRwbc';
-const SHEET_NAME = 'Página1'; // Exatamente como está na planilha
-
-const url = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${encodeURIComponent(SHEET_NAME)}?key=${API_KEY}`;
-
-fetch(url)
+fetch('/api/produtos')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('produtos');
@@ -87,7 +86,7 @@ fetch(url)
 </div><br>
       <input type="number" name="" id="qtd${nome}" min="1" value="1" class="">
       <div class="d-flex align-items-end justify-content-center">
-      <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded-pill m-1 p-1  btn-car " id="liveToastBtn">Adicionar à sacola</button>
+      <button onclick="addToCart('${nome}', '${preco}', 'qtd${nome}')" class="btn-sm border-0 rounded-pill m-1 p-1  btn-car " id="liveToastBtn"> Adicionar à sacola</button>
       </div>
     </div>
   </div>
