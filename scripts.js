@@ -43,6 +43,7 @@ function exibirToast(mensagem, tipo = 'success') {
 }
 // FIM DA FUNÇÃO DE EXIBIR ALERTA
 
+// CHAMANDO API DA GOOGLE SHEETS VIA FETCH, FAZENDO REQUISIÇÃO PELA ROTA
 fetch('/api/produtos')
   .then(response => response.json())
   .then(data => {
