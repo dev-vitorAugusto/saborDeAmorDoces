@@ -169,10 +169,10 @@ header{
     font-weight: bold;
   }
 .btn-car{
-    background-color: var(--cor-botoes);
+    background-color: var(--cor-letras);
     color: #fff;
-    font-weight: 700;
-    box-shadow: 2px 3px #000;
+    font-weight: 500;
+    font-size: 15px;
   }
 input[type=number]::-webkit-inner-spin-button { 
     all: unset; 
