@@ -247,6 +247,7 @@ footer{
 .form-pc{
     display: none;
 }
+
 /* FIM CARDS DOS PRODUTOS */
 /* BREAKPOINTS */
 /* Quando a tela passar de 768px (tablet e acima) */
@@ -285,6 +286,7 @@ footer{
     .form-pc{
         display: block;
     }
+  
   } 
 
   /* CELULAR / TABLET DEITADO */
