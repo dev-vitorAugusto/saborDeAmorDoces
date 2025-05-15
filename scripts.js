@@ -81,7 +81,7 @@ fetch('/api/produtos')
   </a>
 </p>
 <div class="collapse" id="collapseExample${i}">
-  <div class="card card-body">
+  <div class="">
   ${desc}
   </div>
 </div><br>
