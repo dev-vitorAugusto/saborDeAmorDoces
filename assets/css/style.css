@@ -18,6 +18,7 @@ body{
     --cor-botoes: #BB8B77;
 }
 /* FIM VARIÁVEIS DE CORES */
+
 /* ESTILOS DO CABEÇALHO */
 #fundo-cabecalho{
     background-color: var(--cor-fundo-cabecalho);
@@ -162,6 +163,19 @@ header{
 }
 /* FIM DOS ESTILOS DO CABEÇALHO */
 
+/* ESTILOS DO DESTAQUE */
+.texto-destaque{
+    font-family: 'Dancing Script';
+    font-weight: 900;
+    color: var(--cor-fundo-body);
+    
+    background: linear-gradient(9deg, var(--cor-fundo-cabecalho) 0%, rgba(118,49,35,0.8) 100%);
+    box-shadow: 0 px 8px rgba(0,0,0,0.3);
+    top: 68%;
+    text-align: center;
+}
+/* FIM DOS ESILOS DO DESTAQUE */
+
 /* CARD DOS PRODUTOS */
 .text-preco{
     color: #94745C;
@@ -191,14 +205,8 @@ input[type=number]::-webkit-inner-spin-button {
     border: none;
   } 
 
- /* ESTILO DA TABELA DO CARRINHO */
- /* DESCRIÇÃO PRODUTO */
- .desc {
+/* FIM CARD DOS CARRINHOS */
 
-  
- 
-  }
-  
 /*  botão flutuante CARRINHO */
 .carrinho-flutuante{
     position: fixed; 
@@ -233,51 +241,28 @@ input[type=number]::-webkit-inner-spin-button {
     color: #fff;
     margin: auto;
 }
+/* FIM DOS BOTÕES FLUTUANTES */
+
+/* ESTILOS DO FOOTER */
 footer{
     font-family: 'Poppins';
     color: var(--cor-letras);
 }
+/* FIM FOOTER */
+
+/* CARROSEL DE IMAGENS - PC E MOBILE */
 .carousel-pc{
     display: none;
 }
 .embed-insta{
     display: none;
 }
+/* FIM DOS ESITLOS DO CARROSSEL */
 .form-pc{
     display: none;
 }
-.texto-destaque{
-    font-family: 'Dancing Script';
-    font-weight: 900;
-    color: var(--cor-fundo-body);
-    
-    background: linear-gradient(9deg, var(--cor-fundo-cabecalho) 0%, rgba(118,49,35,0.8) 100%);
-    box-shadow: 0 px 8px rgba(0,0,0,0.3);
-    top: 68%;
-    text-align: center;
-}
-/* FIM CARDS DOS PRODUTOS */
-/* BREAKPOINTS */
-/* Quando a tela passar de 768px (tablet e acima) */
-/* @media (min-width: 768px) and (orientation: landscape){ */
-    /* Ajustes para tablet e desktop pequeno */
-    /* #fundo-cabecalho::after {
-        content: "";
-        display: block;
-        height: 25px;
-        background: url('../icones/icone-triangulos.svg') repeat-x;
-        background-size: auto 100%; 
-        background-position: center;
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-        top: 9%;
-    
-    }
 
-  } */
+
   
   /* Quando a tela passar de 992px (desktop padrão) */
    @media (min-width: 992px){
@@ -333,45 +318,6 @@ footer{
         letter-spacing: 0.1rem;
         font-family: 'Poppins';
         color: var(--cor-letras);
-    }
-
-    
+    }   
 }
-/* Telas médias (laptops pequenos, desktops comuns) */
-/* @media (min-width: 1025px) and (max-width: 1366px) {
-    #fundo-cabecalho::after {
-        content: "";
-        display: block;
-        height: 25px;
-        background: url('../icones/icone-triangulos.svg') repeat-x;
-        background-size: auto 100%; 
-        background-position: center;
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-        top: 9%;
-        display: none;    
-    }
-} */
-
-/* Telas grandes (desktops maiores, telas full HD) */
-/* @media (min-width: 1367px) and (max-width: 1920px){
-    #fundo-cabecalho::after {
-        content: "";
-        display: block;
-        height: 25px;
-        background: url('../icones/icone-triangulos.svg') repeat-x;
-        background-size: auto 100%; 
-        background-position: center;
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-        top: 14%;
-        display: none;
-    }
-} */
   
