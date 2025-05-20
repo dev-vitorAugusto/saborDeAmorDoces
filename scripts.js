@@ -73,7 +73,7 @@ fetch('/api/produtos')
   <div class="card border-0 mb-3" style="width: 15.5rem;">
     <img src="${img}" class="card-img-top" alt="..." width="400px" height="200px">
     <div class="card-body">
-      <h5 class="card-title titulo-card fw-bold fst-italic text-center">${nome}</h5>
+      <h5 class="card-title titulo-card fw-bold text-center">${nome}</h5>
       <p class="card-text text-preco fs-5">R$${preco}</p>
       <p class="d-inline-flex gap-1">
   <a class="text-danger p-0 m-0 text-decoration-none fw-semibold" data-bs-toggle="collapse" href="#collapseExample${i}" role="button" aria-expanded="false" aria-controls="collapseExample">
