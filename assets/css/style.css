@@ -101,6 +101,7 @@ header{
 }
 .titulo-card{
     font-size: 1.1rem;
+    font-family: 'Dancing Script';
 }
 .triangulo{
     position: absolute;
