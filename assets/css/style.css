@@ -206,9 +206,16 @@ input[type=number]::-webkit-inner-spin-button {
     border: none;
   } 
 
-  #bg-catalogo{
+    #bg-catalogo{
     background-color: #b87a798f;
+
   }
+  #onda-topo {
+        background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23b87a798f" d="M0,96L60,101.3C120,107,240,117,360,122.7C480,128,600,128,720,117.3C840,107,960,85,1080,80C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>') no-repeat;
+  background-size: cover;
+  height: 100px;
+  transform: rotate(180deg); /* Inverte a onda */
+}
 /* FIM CARD DOS CARRINHOS */
 
 /*  botão flutuante CARRINHO */
