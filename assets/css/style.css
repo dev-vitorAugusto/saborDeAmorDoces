@@ -206,7 +206,7 @@ input[type=number]::-webkit-inner-spin-button {
     border: none;
   } 
 
-  .bg-catalogo{
+  #bg-catalogo{
     background-color: var(--cor-letras);
   }
 /* FIM CARD DOS CARRINHOS */
