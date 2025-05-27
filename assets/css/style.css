@@ -140,7 +140,7 @@ header{
 }
 .fundo-texto-card{
     text-align: justify;
-    width: 75%;
+    width: 85%;
     font-weight: 600;
     letter-spacing: 0.1rem;
     font-family: 'Poppins';
@@ -202,6 +202,12 @@ header{
 .img-ondulada{
     width: 85%;
     height: 85%
+}
+
+.destaque-palavras{
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    font-size: 1.7rem;
 }
 /* FIM DO SOBRE MIM */
 /* CARD DOS PRODUTOS */
