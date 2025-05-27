@@ -172,7 +172,29 @@ header{
     
     background: linear-gradient(9deg, var(--cor-fundo-cabecalho) 0%, rgba(118,49,35,0.8) 100%);
     box-shadow: 0 px 8px rgba(0,0,0,0.3);
-    top: 68%;
+    top: 84%;
+    text-align: center;
+}
+
+.texto-destaque2{
+    font-family: 'Dancing Script';
+    font-weight: 900;
+    color: var(--cor-fundo-body);
+    
+    background: linear-gradient(9deg, var(--cor-fundo-cabecalho) 0%, rgba(118,49,35,0.8) 100%);
+    box-shadow: 0 px 8px rgba(0,0,0,0.3);
+    top: 76%;
+    text-align: center;
+}
+
+.texto-destaque3{
+    font-family: 'Dancing Script';
+    font-weight: 900;
+    color: var(--cor-fundo-body);
+    font-size: 1.6rem;
+    background: linear-gradient(9deg, var(--cor-fundo-cabecalho) 0%, rgba(118,49,35,0.8) 100%);
+    box-shadow: 0 px 8px rgba(0,0,0,0.3);
+    top: 81%;
     text-align: center;
 }
 /* FIM DOS ESILOS DO DESTAQUE */
@@ -331,5 +353,40 @@ footer{
         font-family: 'Poppins';
         color: var(--cor-letras);
     }   
+
+    /* ESTILOS DO DESTAQUE */
+.texto-destaque{
+    font-family: 'Dancing Script';
+    font-weight: 900;
+    color: var(--cor-fundo-body);
+    
+    background: linear-gradient(9deg, var(--cor-fundo-cabecalho) 0%, rgba(118,49,35,0.8) 100%);
+    box-shadow: 0 px 8px rgba(0,0,0,0.3);
+    top: 82%;
+    text-align: center;
+}
+
+.texto-destaque2{
+    font-family: 'Dancing Script';
+    font-weight: 900;
+    color: var(--cor-fundo-body);
+    
+    background: linear-gradient(9deg, var(--cor-fundo-cabecalho) 0%, rgba(118,49,35,0.8) 100%);
+    box-shadow: 0 px 8px rgba(0,0,0,0.3);
+    top: 73%;
+    text-align: center;
+}
+
+.texto-destaque3{
+    font-family: 'Dancing Script';
+    font-weight: 900;
+    color: var(--cor-fundo-body);
+    
+    background: linear-gradient(9deg, var(--cor-fundo-cabecalho) 0%, rgba(118,49,35,0.8) 100%);
+    box-shadow: 0 px 8px rgba(0,0,0,0.3);
+    top: 81%;
+    text-align: center;
+}
+/* FIM DOS ESILOS DO DESTAQUE */
 }
   
