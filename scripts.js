@@ -182,7 +182,7 @@ function enviarPedido() {
   mensagem += `\n*Total: R$* ${total.toFixed(2)}`;
 
 
-  const numero = "5511992152799"; // Substitua pelo número da doceira
+  const numero = "5511992152799"; 
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
   window.open(url, "_blank");
