@@ -71,7 +71,7 @@ fetch('/api/produtos')
       div.innerHTML = `
           <div class="modelo-produto">
   <div class="card border-0 mb-3" style="width: 17rem;">
-    <img src="${img}" class="card-img-top" alt="..." width="450px" height="200px">
+    <img src="${img}" class="card-img-top" alt="..." width="450px" height="250px">
     <div class="card-body">
       <h5 class="card-title titulo-card fw-bold text-center">${nome}</h5>
       <p class="card-text text-preco fs-5">R$${preco}</p>
