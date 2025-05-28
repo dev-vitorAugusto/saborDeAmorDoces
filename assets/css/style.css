@@ -172,7 +172,7 @@ header{
     
     background: linear-gradient(9deg, var(--cor-fundo-cabecalho) 0%, rgba(118,49,35,0.8) 100%);
     box-shadow: 0 px 8px rgba(0,0,0,0.3);
-    top: 84%;
+    top: 89%;
     text-align: center;
 }
 
@@ -197,10 +197,33 @@ header{
     top: 81%;
     text-align: center;
 }
+
+
+#destaque1{
+    background-image: url('../imagens/imagensBlenda/destaqueBrigadeiros.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    height: 400px;
+}
+#destaque2{
+    background-image: url('../imagens/imagensBlenda/destaqueBrigadeiros2.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    height: 400px;
+}
+#destaque3{
+    background-image: url('../imagens/imagensBlenda/destaqueProdutos.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    height: 400px;
+}
 /* FIM DOS ESILOS DO DESTAQUE */
 /* SOBRE MIM */
 .img-ondulada{
-    width: 72%;
+    width: 82%;
     height: 72%
 }
 
@@ -244,11 +267,19 @@ input[type=number]::-webkit-inner-spin-button {
 
   }
   #onda-topo {
-        background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23f7dddc" d="M0,96L60,101.3C120,107,240,117,360,122.7C480,128,600,128,720,117.3C840,107,960,85,1080,80C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>') no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23f7dddc" d="M0,96L60,101.3C120,107,240,117,360,122.7C480,128,600,128,720,117.3C840,107,960,85,1080,80C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>') no-repeat;
   background-size: cover;
   height: 100px;
   transform: rotate(180deg); /* Inverte a onda */
   
+}
+#sobre-mim-img{
+    width: 300px;
+    height: 300px;
+    background-image: url('../imagens/imagensBlenda/imagemPerfil.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 /* FIM CARD DOS CARRINHOS */
 
@@ -403,7 +434,7 @@ footer{
 /* SOBRE MIM */
 .img-ondulada{
     width: 48%;
-    height: 48%
+    height: 55%
 }
 /* FIM DO SOBRE MIM */
 }
