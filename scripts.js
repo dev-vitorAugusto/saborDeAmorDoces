@@ -70,7 +70,7 @@ fetch('/api/produtos')
       div.className = 'produto col-md-6 col-lg-4 d-flex justify-content-center mb-4';
       div.innerHTML = `
           <div class="modelo-produto">
-  <div class="card border-0 mb-3" style="width: 17rem;">
+  <div class="card border-0 mb-3" style="width: 19rem;">
     <img src="${img}" class="card-img-top" alt="..." width="470px" height="260px">
     <div class="card-body">
       <h5 class="card-title titulo-card fw-bold text-center">${nome}</h5>
