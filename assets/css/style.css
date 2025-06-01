@@ -49,7 +49,7 @@ header{
   .fundo-texto-card {
     text-align: center;
     white-space: initial;
-    font-size: 300px;
+    font-size: 1.9rem;
   }
   #titulo-fundo{
     font-size: 30px;
@@ -229,8 +229,17 @@ header{
 
 .destaque-palavras{
     font-family: 'Dancing Script';
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 1.5rem;
+}
+.fundo-texto-card-sobre{
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 85%;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-family: 'Poppins';
+    color: var(--cor-letras);
 }
 /* FIM DO SOBRE MIM */
 /* CARD DOS PRODUTOS */
